@@ -1,0 +1,427 @@
+/* =============================
+
+    GENERAL STYLES
+
+=============================*/
+
+
+*{
+    box-sizing: border-box
+  }
+  
+  /* Single-direction margin declaration to establish vertical rhythm. */
+  h1,h2,h3,
+  ul,ol,
+  p,
+  img {
+      margin-bottom: 1.5rem;
+  }
+  
+  .locations,
+  .program,
+  .gifts,
+  .contact {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: .5rem 1rem;
+    text-align: center;
+  }
+  
+  body{
+    background: url('img/bgw.png') repeat center;
+    font-family: 'Libre Baskerville', serif;
+    color: #444349;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  a{
+    color: #bd806e;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #eda087;
+    transition: color 0.15s ease-in-out;
+  }
+
+  /* =============================
+
+    PAGELOADER STYLE
+
+  =============================*/
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Set the background color for the loader */
+    z-index: 9999; /* Ensure the loader appears on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Set the desired size for the icon */
+    height: 300px;
+  }
+
+  /* =============================
+
+    BUTTON STYLES
+
+  =============================*/
+/*
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+  }
+  
+  .nav-list li a button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2ba87;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-list li a button:hover {
+    background-color: #d2ba87;
+  }
+
+  
+*/ 
+  
+  /* =============================
+  
+          HEADER STYLES
+  
+  =============================*/
+  
+  .cover{
+    background: url('img/bcgrd.jpg') no-repeat 70% center/cover;
+    display: table;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .hero-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .hero-text {
+    margin: 0 auto;
+    padding: .625rem;
+    color: hsl(0, 0%, 100%);
+    background: hsla(100,0%,0%,.5);
+  }
+  
+  .hero-text h1 {
+    font-size: 3.15rem;
+    color: #efb946;
+    margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+  }
+  
+  .tagline {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+  }
+  
+  .tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.515625rem;
+    margin: .5rem auto;
+  }
+  
+  .date {
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
+  }
+  
+  .date::before,
+  .date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+  
+  /* =============================
+  
+        LOCATIONS STYLES
+  
+  =============================*/
+  
+  .blurb img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .blurb h3 {
+    font-weight: 700;
+  }
+  
+  .blurb div {
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .blurb::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+  }
+  
+  /* =============================
+  
+          PROGRAM STYLES
+  
+  =============================*/
+  
+  .program {
+    background: hsla(100,0%,0%,.6);
+    width: 100vw;
+    text-align: left;
+    color: #d2ba87;
+    font-family: 'Muli', sans-serif;
+    
+  }
+  
+  .program h2 {
+    font-family: 'Great Vibes', cursive;
+    margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+    text-align: center;
+  }
+  
+  .program p {
+    font-style: italic;
+  }
+  
+  .program ul {
+    letter-spacing: .025rem;
+  }
+  
+  /* =============================
+  
+          GIFTS STYLES
+  
+  =============================*/
+  
+  .gifts img{
+    height: 7.5rem;
+  }
+  
+  .gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+    margin-bottom: 0;
+  }
+  
+  /* =============================
+  
+          Questions & Answers STYLES
+  
+  =============================*/
+  
+  .faq{
+    background: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    width: 100vw;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .faq h2{
+    margin-top: 1rem; /* To even out top and bottom margins. */
+  }
+  
+  .faq p{
+    text-align: left;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .question-group::after {
+    content: "";
+    display: block;
+    height: .1875rem;
+    width: 50vw;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+  }
+  
+  .question {
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  
+  .answer {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* =============================
+  
+          FOOTER STYLES
+  
+  =============================*/
+  
+  footer{
+    height: 10wh;
+    width: 100vw;
+    background-color: #606060;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: table;
+    text-align: center;
+    font-size: .875rem;
+  }
+  
+  .footer-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .5rem 1rem;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer small {
+    line-height: 1.5;
+  }
+  
+  /* =============================
+  
+   HEADER STYLES FOR ASZTALI GÉP
+  
+  =============================*/
+  
+  @media (min-width: 768px){
+    .cover {
+      background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+    }
+    .tagline{
+       text-transform: uppercase;
+    }
+    .hero-text h1{
+      font-size: 5rem
+    }
+    .hero-text {
+      padding: 1.25rem;
+      border-radius: 4px;
+      width: 50%;
+    }
+  }
+  
+  /* =============================
+  
+   LOCATIONS STYLES FOR ASZTALI GÉP
+  
+  =============================*/
+  
+  @media (min-width: 768px) {
+  
+    .blurb {
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+    .blurb::after {
+      display: none;
+    }
+  }
+  
+  /* =============================
+  
+   PROGRAM STYLES FOR ASZTALI GÉP
+  
+  =============================*/
+  
+  @media (min-width: 768px){
+    .program-wrapper {
+      width: 30vw;
+      margin: 0 auto;
+    }
+  }
+  
+  /* =============================
+  
+   PQUESTION, ANSWER STYLES FOR ASZTALI GÉP
+  
+  =============================*/
+  
+  @media (min-width: 768px){
+    .question-group {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+    .question-group::after {
+      display: none;
+    }
+    .question-group h3 {
+      text-align: left;
+    }
+  }
+  
+  /* =============================
+  
+   FOOTER STYLES FOR ASZTALI GÉP
+  
+  =============================*/
+  
+  @media (min-width: 768px){
+    footer{
+      min-height: 7vh;
+    }
+  }
