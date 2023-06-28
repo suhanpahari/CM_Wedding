@@ -1,0 +1,254 @@
+html,body
+{   width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.background{
+    color: azure;
+    background: rgb(0, 0, 0) url('Images/ritual-with-coconut-leaves-during-traditional-hindu-wedding-ceremony.jpg');
+    background-size: cover;
+}
+
+.navbar{
+    height: 90px;
+    display: flex;
+    position: sticky;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 25px 30px;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.logo img{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 550;
+}
+
+.nav-list a:hover{
+    color: #633D24;
+    font-size: 25px;
+}
+
+#search{
+    padding: 5px;
+    border: 3px solid grey;
+    border-radius: 40px;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+    max-width: 50%;
+    margin: auto;
+    height: 60%; 
+}
+
+.firstSection{
+    height: 100vh; 
+}
+
+.firsthalf{
+    height: 100vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondHalf img{
+        width: 200px;
+        height: 200px;
+        border: 3px solid white;
+        border-radius: 200px;
+}
+
+.secondHalf{
+        margin: auto;
+}
+
+.text-big{
+    font-size: 35px;
+    color: #3f5835;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.text-small{
+    font-size: 20px;
+    color: #3f5835;
+    padding-bottom: 10px;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.btn{
+    padding: 5px 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #F6EDE4;
+}
+
+.paras{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.leftSec{
+    flex-direction: row-reverse;
+}
+
+.contact{
+    margin: 0;
+    height: vh;
+    background-color: #633D24;
+}
+
+.text-center{
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding-top: 17px;
+    color: #046CB4;
+}
+
+.form{
+    max-width: 80vh;
+    margin: auto;
+    height: 54vh;
+}
+
+.form-input{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid #046CB4;
+    margin: 17px auto;
+    padding: 3px;
+}
+
+.btn-dark{
+    width: 70px;
+    height: 30x;
+    font-size: 15px;
+    background-color: #046CB4;
+    border: #046CB4;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:white;
+    background-color: #046CB4;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width:33px;
+    height: 5px;
+    background-color: white;
+    margin: 3px
+}
+
+@media only screen and (max-width: 886px){
+    .nav-list{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transform: all 5.7s ease-out;
+    }
+    .rightNav{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    #search{
+        width: 60%;
+    }
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .form-input{
+        width: 70%;
+        text-align: center;
+        margin: 5px 10%;
+    }
+
+}  
